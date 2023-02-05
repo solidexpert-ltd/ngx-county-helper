@@ -6,6 +6,7 @@ Angular helper to get current country by TimeZone
 | Angular version | package version |
 | --------------- | --------------- |
 | 14.x|14.x|
+| 15.x|15.x|
 
 ## Installation
 
