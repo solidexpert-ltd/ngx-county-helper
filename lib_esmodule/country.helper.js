@@ -1,5 +1,5 @@
 export function getCountry() {
-    var countries = {
+    let countries = {
         AD: 'Andorra',
         AE: 'United Arab Emirates',
         AF: 'Afghanistan',
@@ -250,7 +250,7 @@ export function getCountry() {
         ZM: 'Zambia',
         ZW: 'Zimbabwe',
     };
-    var timezones = {
+    let timezones = {
         'Africa/Abidjan': {
             u: 0,
             c: ['CI', 'BF', 'GH', 'GM', 'GN', 'ML', 'MR', 'SH', 'SL', 'SN', 'TG'],
@@ -2854,11 +2854,11 @@ export function getCountry() {
             r: 1,
         },
     };
-    var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     if (timezone === '' || !timezone) {
         return null;
     }
-    var _country = timezones[timezone].c[0];
-    var country = { name: countries[_country], code: _country };
+    const _country = timezones[timezone].c[0];
+    const country = { name: countries[_country], code: _country };
     return country;
 }
