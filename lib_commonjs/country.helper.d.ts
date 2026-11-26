@@ -1,4 +1,4 @@
 export declare function getCountry(): {
-    name: any;
-    code: any;
-};
+    name: string;
+    code: string;
+} | null;

@@ -12,7 +12,8 @@
     "stripInternal": true,
     "outDir": "lib_commonjs/",
     "rootDir": "src",
-    "lib": ["dom", "es2022"]
+    "lib": ["dom", "es2022"],
+    "ignoreDeprecations": "6.0"
   },
   "include": [
     "src/**/*"

@@ -1,5 +1,5 @@
 export function getCountry() {
-  let countries = {
+  let countries: Record<string, string> = {
     AD: 'Andorra',
     AE: 'United Arab Emirates',
     AF: 'Afghanistan',
@@ -250,7 +250,7 @@ export function getCountry() {
     ZM: 'Zambia',
     ZW: 'Zimbabwe',
   };
-  let timezones = {
+  let timezones: Record<string, { a?: string; c?: string[]; d?: number; r?: number; u?: number }> = {
     'Africa/Abidjan': {
       u: 0,
       c: ['CI', 'BF', 'GH', 'GM', 'GN', 'ML', 'MR', 'SH', 'SL', 'SN', 'TG'],
@@ -2861,7 +2861,7 @@ export function getCountry() {
     return null;
   }
 
-  const _country = timezones[timezone].c[0];
+  const _country = timezones[timezone]!.c![0];
   const country = { name: countries[_country], code: _country };
   return country;
 }
